@@ -13,7 +13,7 @@ development:
   encoding: utf8
   database: webblog_development
   pool: 5
-  username: root
+  username: blog
   password: 1234
   socket: /var/run/mysqld/mysqld.sock
 
