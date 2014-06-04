@@ -15,6 +15,7 @@ role :db,  %w{deploy@example.com}
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 server 'ec2-54-186-218-247.us-west-2.compute.amazonaws.com', user: 'ubuntu', roles: %w{web app}
+set :rails_env, 'development'
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
