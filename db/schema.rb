@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228003358) do
+ActiveRecord::Schema.define(version: 20140422182834) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parts", force: true do |t|
+    t.text     "part_name"
+    t.integer  "price"
+    t.boolean  "available",  default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
