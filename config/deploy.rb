@@ -3,6 +3,8 @@
 
 set :application, 'bw_webblog'
 set :repo_url, 'git@github.com:benweible/bw_webblog.git'
+set :deploy_to, '/home/ubuntu/webblog_deploy'
+
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
